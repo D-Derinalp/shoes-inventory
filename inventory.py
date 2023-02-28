@@ -231,40 +231,40 @@ read_shoes_data()
 while True:
     
     menu = input('''\nPlease select one of the following options below:
-    a  -  view all inventory
-    c  -  capture shoes
-    r  -  restock
-    s  -  search shoe
-    v  -  calculate total value of a product
-    h  -  display the product with the highest quantity 
-    q  -  quit''').lower()
+    1  -  view all inventory
+    2  -  capture shoes
+    3  -  restock
+    4  -  search shoe
+    5  -  calculate total value of a product
+    6  -  display the product with the highest quantity 
+    0  -  quit''').lower()
 
     # view all inventory
-    if menu == "a":
+    if menu == "1":
         view_all()
 
     # capture shoes
-    elif menu == "c":
+    elif menu == "2":
         capture_shoes()
 
     # restock
-    elif menu == "r":
+    elif menu == "3":
         re_stock()
 
     # search shoe
-    elif menu == "s":
+    elif menu == "4":
         search_shoe()
 
     # calculate total value of a product
-    elif menu == "v":
+    elif menu == "5":
         value_per_item()
 
     # display the product with the highest quantity
-    elif menu == "h":
+    elif menu == "6":
         highest_qty()
 
     # quit
-    elif menu == "q":
+    elif menu == "0":
         break
 
     else:
