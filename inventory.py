@@ -64,7 +64,9 @@ def capture_shoes():
         product = input("Please enter product name:")
         cost = int(input("Please enter cost of product:"))
         quantity = int(input("Please enter quantity of shoes:"))
-        shoe_new = Shoe(country, code, product, cost, quantity)  # Creates new objects according to the entered data.
+
+        # Creates new objects according to the entered data.
+        shoe_new = Shoe(country, code, product, cost, quantity)
         shoe_list.append(shoe_new)
 
         try:
